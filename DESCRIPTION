@@ -1,0 +1,11 @@
+Package: PSLMcerp
+Type: Package
+Title: PSLM Dashboard by Centre for Economic Research in Pakistan
+Version: 0.1.0
+Author: Altamash Rafiq <altamash.rafiq@cerp.org.pk>
+Maintainer: Altamash Rafiq <altamash.rafiq@cerp.org.pk>
+Description: Provides access to a dashboard making statistical analysis of the Pakistan Social and Living Standards Measurement Survey data more intuitive and easy. Created and made open sourse by the Centre for Economic Research in Pakistan.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
