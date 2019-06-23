@@ -9,6 +9,7 @@
 #' @return
 #' @export
 #'
+#'@import dplyr
 #' @examples
 general_chr_filter = function(data, prov = FALSE, district = FALSE, region = FALSE, element){
   logicals = c(prov, district, region)

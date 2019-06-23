@@ -103,6 +103,7 @@ info_parser = function(req_info){
 #' @return
 #' @export
 #'
+#'@importFrom tidyr spread
 #' @examples
 summary_maker = function(main_df, column_of_choice, zero_omit = TRUE){
   legend = typeof(main_df[[column_of_choice]])

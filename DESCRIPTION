@@ -11,3 +11,14 @@ LazyData: true
 RoxygenNote: 6.1.1
 URL: https://github.com/AltamashRafiq/PSLMcerp
 BugReports: https://github.com/AltamashRafiq/PSLMcerp/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Imports: 
+    shiny,
+    highcharter,
+    glue,
+    dplyr,
+    htmlwidgets,
+    tidyr

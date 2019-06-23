@@ -8,6 +8,9 @@
 #' @return
 #' @export
 #'
+#'@import highcharter
+#'@importFrom glue glue
+#'@importFrom htmlwidgets JS
 #' @examples
 funky_plot_dbl = function(df, column_of_interest, zero_omit = TRUE, out = FALSE){
   my_palette = c('#31688EFF', '#DC143C', '#35B779FF', '#FF8F00') %>% sample()
