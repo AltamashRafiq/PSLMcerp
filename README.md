@@ -1,5 +1,5 @@
 
-[![Travis build status](https://travis-ci.com/AltamashRafiq/PSLMcerp.svg?branch=master)](https://travis-ci.com/AltamashRafiq/PSLMcerp) [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/AltamashRafiq/PSLMcerp?branch=master&svg=true)](https://ci.appveyor.com/project/AltamashRafiq/PSLMcerp)
+[![Travis build status](https://travis-ci.com/AltamashRafiq/PSLMcerp.svg?branch=master)](https://travis-ci.com/AltamashRafiq/PSLMcerp) [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/AltamashRafiq/PSLMcerp?branch=master&svg=true)](https://ci.appveyor.com/project/AltamashRafiq/PSLMcerp) [![Codecov test coverage](https://codecov.io/gh/AltamashRafiq/PSLMcerp/branch/master/graph/badge.svg)](https://codecov.io/gh/AltamashRafiq/PSLMcerp?branch=master)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 PSLMcerp
