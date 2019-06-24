@@ -7,7 +7,6 @@
 #' @export
 #'
 #'@import shiny
-#'@import devtools
 #'@import shinythemes
 #' @examples
 implement_dashboard = function(tab1, tab2){

@@ -22,4 +22,5 @@ Imports:
     glue,
     dplyr,
     htmlwidgets,
-    tidyr
+    tidyr,
+    shinythemes
