@@ -21,6 +21,8 @@ Example
 
 This is a basic example which shows you how to solve a common problem:
 
+I am just trying something with this commit.
+
 ``` r
 library(PSLMcerp)
 ## basic example code
