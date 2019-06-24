@@ -7,7 +7,6 @@
 #' @param element
 #'
 #' @return
-#' @export
 #'
 #'@import dplyr
 #' @examples
@@ -29,7 +28,6 @@ general_chr_filter = function(data, prov = FALSE, district = FALSE, region = FAL
 #' @param region
 #' @param element
 #'
-#' @return
 #' @export
 #'
 #' @examples

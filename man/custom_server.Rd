@@ -9,6 +9,9 @@ custom_server(input, output, session)
 \arguments{
 \item{session}{}
 }
+\value{
+
+}
 \description{
 Custom Server for Shiny Dashboard
 }

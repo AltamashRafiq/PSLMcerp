@@ -9,6 +9,9 @@ funky_plot_chr(df, column_of_interest)
 \arguments{
 \item{column_of_interest}{}
 }
+\value{
+
+}
 \description{
 Highcharts Plot for Character Columns
 }

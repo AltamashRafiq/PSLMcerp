@@ -9,6 +9,9 @@ funky_plot_dbl(df, column_of_interest, zero_omit = TRUE, out = FALSE)
 \arguments{
 \item{out}{}
 }
+\value{
+
+}
 \description{
 Highcharts Plot for Numeric Columns
 }

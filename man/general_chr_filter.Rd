@@ -10,6 +10,9 @@ general_chr_filter(data, prov = FALSE, district = FALSE,
 \arguments{
 \item{element}{}
 }
+\value{
+
+}
 \description{
 Character Column Interpreter
 }

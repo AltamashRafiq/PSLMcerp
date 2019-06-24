@@ -5,7 +5,6 @@
 #' @param session
 #'
 #' @return
-#' @export
 #'
 #' @examples
 custom_server = function(input, output, session) {

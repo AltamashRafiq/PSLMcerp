@@ -25,9 +25,12 @@ type_pull = function(input, col){
 #' @return
 #' @export
 #'
+#'@import PSLMdata
 #' @examples
 data_real = function(){
-  return(list(sec_c, sec_b, sec_d, sec_e, sec_f1, sec_f2, sec_g, sec_h, sec_i, sec_j))
+  return(list(PSLMdata::sec_c, PSLMdata::sec_b, PSLMdata::sec_d,
+              PSLMdata::sec_e, PSLMdata::sec_f1, PSLMdata::sec_f2,
+              PSLMdata::sec_g, PSLMdata::sec_h, PSLMdata::sec_i, PSLMdata::sec_j))
 }
 
 #' Input Desired PSLM Coding
@@ -37,7 +40,7 @@ data_real = function(){
 #'
 #' @examples
 codes = function(){
-  return(pslm_codes)
+  return(PSLMdata::pslm_codes)
 }
 
 #' Data Input - For Use in Multiple Functions
@@ -109,7 +112,7 @@ info_parser = function(req_info){
 #' @return
 #' @export
 #'
-#'@importFrom tidyr spread
+#'@import tidyr
 #' @examples
 summary_maker = function(main_df, column_of_choice, zero_omit = TRUE){
   legend = typeof(main_df[[column_of_choice]])

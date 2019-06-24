@@ -6,7 +6,6 @@
 #' @param out
 #'
 #' @return
-#' @export
 #'
 #'@import highcharter
 #'@importFrom glue glue
@@ -37,7 +36,6 @@ funky_plot_dbl = function(df, column_of_interest, zero_omit = TRUE, out = FALSE)
 #' @param column_of_interest
 #'
 #' @return
-#' @export
 #'
 #' @examples
 funky_plot_chr = function(df, column_of_interest){

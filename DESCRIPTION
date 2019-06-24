@@ -23,4 +23,5 @@ Imports:
     dplyr,
     htmlwidgets,
     tidyr,
-    shinythemes
+    shinythemes,
+    PSLMdata

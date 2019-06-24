@@ -19,9 +19,9 @@ implement_dashboard = function(){
       ####################### TAB 1 #######################
       #### Setting Sidebar Select Inputs ####
       observeEvent(input$data_type,{
-        updateSelectInput(session, 'gen_query', choices = type_pull(input$data_type, "Type"))})
+        updateSelectInput(session, 'gen_query', choices = PSLMcerp::type_pull(input$data_type, "Type"))})
       observeEvent(input$gen_query,{
-        updateSelectInput(session, 'req_info', choices = type_pull(input$gen_query, "Full"))})
+        updateSelectInput(session, 'req_info', choices = PSLMcerp::type_pull(input$gen_query, "Full"))})
 
       #### Main Plot ####
       df = eventReactive(input$req_info, {
@@ -38,9 +38,9 @@ implement_dashboard = function(){
       ####################### TAB 2 #######################
       #### Setting Sidebar Select Inputs ####
       observeEvent(input$data_type_t2,{
-        updateSelectInput(session, 'gen_query_t2', choices = type_pull(input$data_type_t2, "Type"))})
+        updateSelectInput(session, 'gen_query_t2', choices = PSLMcerp::type_pull(input$data_type_t2, "Type"))})
       observeEvent(input$gen_query_t2,{
-        updateSelectInput(session, 'req_info_t2', choices = type_pull(input$gen_query_t2, "Full"))})
+        updateSelectInput(session, 'req_info_t2', choices = PSLMcerp::type_pull(input$gen_query_t2, "Full"))})
 
       #### Main Table ####
       df_t2 = eventReactive(input$req_info_t2, {
