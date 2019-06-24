@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-tab1 = function(data_input){
+tab1 = function(data_input = data_input()){
   output = fluidPage(
     sidebarPanel(
       selectInput("data_type", label = "Data Type", choices = data_input),

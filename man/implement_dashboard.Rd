@@ -4,10 +4,7 @@
 \alias{implement_dashboard}
 \title{Open PSLM Dashboard}
 \usage{
-implement_dashboard(tab1, tab2)
-}
-\arguments{
-\item{tab2}{}
+implement_dashboard()
 }
 \description{
 Open PSLM Dashboard

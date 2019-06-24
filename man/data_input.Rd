@@ -4,12 +4,7 @@
 \alias{data_input}
 \title{Data Input - For Use in Multiple Functions}
 \usage{
-data_input(data = c("Education", "Household", "Health", "Employment",
-  "Land/Animals", "Assets/Possessions", "Housing",
-  "Vaccination & Diarrhoea", "Married Women", "Public Benefits/Services"))
-}
-\arguments{
-\item{data}{}
+data_input()
 }
 \description{
 Data Input - For Use in Multiple Functions

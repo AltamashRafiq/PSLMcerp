@@ -4,7 +4,7 @@
 \alias{tab1}
 \title{Tab 1 User Interface}
 \usage{
-tab1(data_input)
+tab1(data_input = data_input())
 }
 \arguments{
 \item{data_input}{}

@@ -9,12 +9,12 @@
 #' @examples
 type_pull = function(input, col){
   if(col == "Type"){
-    output = codes %>%
+    output = codes() %>%
       filter(File == input) %>% na.omit() %>%
       pull("Type") %>% unique()
   }
   else if (col == "Full"){
-    output = codes %>%
+    output = codes() %>%
       filter(Type == input) %>% pull("Full")
   }
   return(output)
@@ -22,26 +22,32 @@ type_pull = function(input, col){
 
 #' Real Data Input - Default Set
 #'
-#' @param data
+#' @return
+#' @export
+#'
+#' @examples
+data_real = function(){
+  return(list(sec_c, sec_b, sec_d, sec_e, sec_f1, sec_f2, sec_g, sec_h, sec_i, sec_j))
+}
+
+#' Input Desired PSLM Coding
 #'
 #' @return
 #' @export
 #'
 #' @examples
-data_real = function(data = list(sec_c, sec_b, sec_d, sec_e, sec_f1, sec_f2, sec_g, sec_h, sec_i, sec_j)){
-  return(data)
+codes = function(){
+  return(pslm_codes)
 }
 
 #' Data Input - For Use in Multiple Functions
 #'
-#' @param data
-#'
 #' @return
 #' @export
 #'
 #' @examples
-data_input = function(data = c("Education", "Household", "Health", "Employment", "Land/Animals", "Assets/Possessions", "Housing", "Vaccination & Diarrhoea", "Married Women", "Public Benefits/Services")){
-  return(data)
+data_input = function(){
+  return(c("Education", "Household", "Health", "Employment", "Land/Animals", "Assets/Possessions", "Housing", "Vaccination & Diarrhoea", "Married Women", "Public Benefits/Services"))
 }
 
 #' Data Chooser Function - Developer Use Only
@@ -53,7 +59,7 @@ data_input = function(data = c("Education", "Household", "Health", "Employment",
 #'
 #' @examples
 data_chooser = function(data_query){
-  return(data_real[[which(data_input %in% data_query)]])
+  return(data_real()[[which(data_input() %in% data_query)]])
 }
 
 #' Filter Chooser Function - Developer Use Only
@@ -88,7 +94,7 @@ filter_chooser = function(data, prov = FALSE, dist = FALSE, region = FALSE, elem
 #'
 #' @examples
 info_parser = function(req_info){
-  output = codes %>%
+  output = codes() %>%
     filter(Full == req_info) %>%
     pull("Code")
   return(output)
