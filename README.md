@@ -1,4 +1,6 @@
 
+[![Travis build status](https://travis-ci.com/AltamashRafiq/PSLMcerp.svg?branch=master)](https://travis-ci.com/AltamashRafiq/PSLMcerp)
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 PSLMcerp
 ========

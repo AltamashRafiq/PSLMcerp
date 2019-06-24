@@ -17,9 +17,9 @@ funky_plot_dbl = function(df, column_of_interest, zero_omit = TRUE, out = FALSE)
   if (zero_omit == TRUE){
     df = df %>% filter(get(column_of_interest) != 0)
   }
-  basic = custom_boxplot(x = df[[column_of_interest]], var = df[["province"]], outliers = out) %>%
+  basic = hcboxplot(x = df[[column_of_interest]], var = df[["province"]], outliers = out) %>%
     hc_chart(type = "column") %>%
-    hc_tooltip(pointFormat = 'Maximum: {point.high}<br/>Upper Quartile: {point.q3}<br/>Median: {point.median}<br/>Lower Quartile: {point.q1}<br/>Minimum: {point.low}<br/>Observations: {point.obs}') %>%
+    #hc_tooltip(pointFormat = 'Maximum: {point.high}<br/>Upper Quartile: {point.q3}<br/>Median: {point.median}<br/>Lower Quartile: {point.q1}<br/>Minimum: {point.low}<br/>Observations: {point.obs}') %>%
     hc_chart(type = "column", events = list(
       load = JS(glue::glue("function() {{
                            var chart = this;
